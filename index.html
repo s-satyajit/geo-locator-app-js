@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geo Locator</title>
+    <title>Geolocation Example with Leaflet</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="index.css">
+    <style>
+        #map {
+            height: 900px;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
+    <h1 style="text-align: center;">Find Your Location</h1>
+    <button onclick="getLocation()" style="display: block; margin: auto;";">Get Location</button>
+    <p id="status" style="text-align: center;"></p>
+    <div id="map"></div>
     
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
